@@ -45,7 +45,7 @@
 				    <h5 class="card-title">A toute vitesse</h5>
 				    <p><small>Mme Charabidze</small></p>
 				    <hr>
-				    <a href="#" class="btn btn-primary">Aller</a>
+				    <a href="a_toute_vitesse.php?partie=1" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
 			</div>
