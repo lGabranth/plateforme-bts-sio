@@ -23,7 +23,7 @@
 				    <h5 class="card-title">Culture générale</h5>
 				    <p><small>Mme Charabidze</small></p>
 				    <hr>
-				    <a href="/Perso/cours_btssio/1-modules/culture_generale" class="btn btn-primary">Aller</a>
+				    <a href="<?php echo RACINE_GLOBAL_RELATIF ?>1-modules/culture_generale" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
 			</div>
@@ -33,7 +33,7 @@
 				    <h5 class="card-title">Mathématiques</h5>
 				    <p><small>Equipe de M. Ben Achour</small></p>
 				    <hr>
-				    <a href="/Perso/cours_btssio/1-modules/maths" class="btn btn-primary">Aller</a>
+				    <a href="<?php echo RACINE_GLOBAL_RELATIF ?>1-modules/maths" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
 			</div>
@@ -43,7 +43,7 @@
 				    <h5 class="card-title">EDM</h5>
 				    <p><small>Messieurs Lion & Belqadi</small></p>
 				    <hr>
-				    <a href="/Perso/cours_btssio/1-modules/edm" class="btn btn-primary">Aller</a>
+				    <a href="<?php echo RACINE_GLOBAL_RELATIF ?>1-modules/edm" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
 				    <h5 class="card-title">Anglais</h5>
 				    <p><small>Mme Guidi</small></p>
 				    <hr>
-				    <a href="/Perso/cours_btssio/1-modules/anglais" class="btn btn-primary">Aller</a>
+				    <a href="<?php echo RACINE_GLOBAL_RELATIF ?>1-modules/anglais" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
 			</div>
@@ -68,7 +68,7 @@
 				    <h5 class="card-title">Réseau</h5>
 				    <p><small>Messieurs Taleb, Rahoual et Ait</small></p>
 				    <hr>
-				    <a href="/Perso/cours_btssio/1-modules/reseau" class="btn btn-primary">Aller</a>
+				    <a href="<?php echo RACINE_GLOBAL_RELATIF ?>1-modules/reseau" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 				    <h5 class="card-title">Développement</h5>
 				    <p><small>Messieurs Larrat, Poivey et Boye</small></p>
 				    <hr>
-				    <a href="/Perso/cours_btssio/1-modules/developpement" class="btn btn-primary">Aller</a>
+				    <a href="<?php echo RACINE_GLOBAL_RELATIF ?>1-modules/developpement" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
   		</div>

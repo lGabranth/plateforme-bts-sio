@@ -30,6 +30,22 @@
 
 	include(__DIR__."/genos.php");
 	include(RACINE_GLOBALE."utilities.php");
+
+	function SetRacineGlobalRelatif($url){
+		// Retourne le chemin relatif
+		$tabURL = explode('/', $url);
+		// var_dump($tabURL);
+		$dossierAttendu = $tabURL[3];
+
+		$tabRacine = explode('/', dirname($_SERVER['PHP_SELF']));
+		$path_relatif = "";
+		for ($i = count($tabRacine)-1 ; $i > 0 ; $i--){
+			if ($tabRacine[$i] == $dossierAttendu) break;
+			else if ($tabRacine[$i] != "") $path_relatif .= "../";
+		}
+
+		define("RACINE_GLOBAL_RELATIF", $path_relatif); //Permet d'accéder à la racine.
+	}
 	
 	
 	

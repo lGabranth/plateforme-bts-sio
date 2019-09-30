@@ -2,6 +2,7 @@
 function Head($string, $menu_active, $menu_deux){ 
 	$menu_active = (isset($menu_active) && !empty($menu_active)) ? $menu_active : 0;
 	$menu_deux 	 = (isset($menu_deux) 	&& !empty($menu_deux)) 	 ? $menu_deux 	: 0;
+	SetRacineGlobalRelatif($_SERVER['REQUEST_URI']);
 ?>
 	<head>
     <title><?php echo $string ?></title>
@@ -11,7 +12,7 @@ function Head($string, $menu_active, $menu_deux){
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="shortcut icon" href="/Perso/cours_btssio/icon.png" />
+    <link rel="shortcut icon" href="<?php echo RACINE_GLOBAL_RELATIF ?>icon.png" />
     <style>
     	body{
     		background-color: #EEEEEE;
@@ -38,12 +39,12 @@ function Head($string, $menu_active, $menu_deux){
 */
 function Menu($menu_active, $menu_deux){ 
 	if ($menu_deux > 0) $menu_deux = $menu_active.$menu_deux;
-	$root_path = "/Perso/cours_btssio/";
+	$root_path = RACINE_GLOBAL_RELATIF;
 ?>
 	<!-- <template id="menu"> -->
 		<!-- <main id="menu"> -->
 			
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
 			  <a class="navbar-brand <?php echo ($menu_active == 1) ? 'active text-info' : ''; ?>" href="<?php echo $root_path; ?>index.php">Accueil</a>
 
 		    <ul class="navbar-nav mr-auto">
@@ -93,7 +94,7 @@ function Menu($menu_active, $menu_deux){
 		          Anglais
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 51) ? 'active' : ''; ?>" href="1-modules/culture_generale/methodologie.php">
+		          <a class="dropdown-item <?php echo ($menu_deux == 51) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
 		          	Méthodologie
 		          </a>
 		          <a class="dropdown-item" href="#">?</a>
@@ -106,7 +107,7 @@ function Menu($menu_active, $menu_deux){
 		          Réseau
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 61) ? 'active' : ''; ?>" href="1-modules/culture_generale/methodologie.php">
+		          <a class="dropdown-item <?php echo ($menu_deux == 61) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
 		          	?
 		          </a>
 		          <a class="dropdown-item" href="#">?</a>
@@ -119,14 +120,17 @@ function Menu($menu_active, $menu_deux){
 		          Développement
 		        </a>
 		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 71) ? 'active' : ''; ?>" href="1-modules/culture_generale/methodologie.php">
+		          <a class="dropdown-item <?php echo ($menu_deux == 71) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
 		          	?
 		          </a>
 		          <a class="dropdown-item" href="#">?</a>
 		          <a class="dropdown-item" href="#">?</a>
 		        </div>
 		      </li>
+						
 		    </ul>
+
+    		<a class="nav-link <?php echo ($menu_active == 8) ? 'active text-info' : 'text-muted'; ?>" href="<?php echo $root_path; ?>1-modules/calcul_obtention">Simulation</a>
 			</nav>
 			<br>
 
