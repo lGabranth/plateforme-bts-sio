@@ -34,7 +34,7 @@
 				    <h5 class="card-title">Seuls avec tous</h5>
 				    <p><small>Mme Charabidze</small></p>
 				    <hr>
-				    <a href="#" class="btn btn-primary">Aller</a>
+				    <a href="seuls_avec_tous.php?partie=1" class="btn btn-primary">Aller</a>
 				  </div>
 				</div>
 			</div>

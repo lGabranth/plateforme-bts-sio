@@ -13,6 +13,7 @@ function Head($string, $menu_active, $menu_deux){
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="<?php echo RACINE_GLOBAL_RELATIF ?>icon.png" />
+    <script src="https://kit.fontawesome.com/34d151f234.js" crossorigin="anonymous"></script>
     <style>
     	body{
     		background-color: #EEEEEE;
@@ -57,7 +58,7 @@ function Menu($menu_active, $menu_deux){
 		          	Méthodologie
 		          </a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Seuls avec tous</a>
+		          <a class="dropdown-item <?php echo ($menu_deux == 22) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/seuls_avec_tous.php?partie=1">Seuls avec tous</a>
 		          <a class="dropdown-item" href="#">A toute vitesse</a>
 		        </div>
 		      </li>
