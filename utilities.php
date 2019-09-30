@@ -59,7 +59,7 @@ function Menu($menu_active, $menu_deux){
 		          </a>
 		          <div class="dropdown-divider"></div>
 		          <a class="dropdown-item <?php echo ($menu_deux == 22) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/seuls_avec_tous.php?partie=1">Seuls avec tous</a>
-		          <a class="dropdown-item" href="#">A toute vitesse</a>
+		          <a class="dropdown-item <?php echo ($menu_deux == 23) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/a_toute_vitesse.php?partie=1">A toute vitesse</a>
 		        </div>
 		      </li>
 
