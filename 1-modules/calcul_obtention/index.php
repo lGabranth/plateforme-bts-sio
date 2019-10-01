@@ -36,7 +36,7 @@
 									<label for="noteCultureG">Culture Générale <small>(coefficient <strong>2</strong>)</small> : </label>
 								</div>
 								<div class="col-md-3">
-									<input id="noteCultureG" name="noteCultureG" type="number" class="form-control" v-model="culture_generale">
+									<input id="noteCultureG" name="noteCultureG" type="number" min="0" max="20" class="form-control" v-model="culture_generale">
 								</div>
 								<div class="col-md-1 mt-2">
 									<span v-if="culture_generale == ''"  class="text-danger"><i class="fas fa-ban"></i></span>
@@ -51,7 +51,7 @@
 									<label for="noteAnglais">Anglais <small>(coefficient <strong>2</strong>)</small> : </label>
 								</div>
 								<div class="col-md-3">
-									<input id="noteAnglais" name="noteAnglais" type="number" class="form-control" v-model="anglais">
+									<input id="noteAnglais" name="noteAnglais" type="number" min="0" max="20" class="form-control" v-model="anglais">
 								</div>
 								<div class="col-md-1 mt-2">
 									<span v-if="anglais == ''"  class="text-danger"><i class="fas fa-ban"></i></span>
@@ -66,7 +66,7 @@
 									<label for="noteMaths">Mathématiques <small>(coefficient <strong>2</strong>)</small> : </label>
 								</div>
 								<div class="col-md-3">
-									<input id="noteMaths" name="noteMaths" type="number" class="form-control" v-model="maths">
+									<input id="noteMaths" name="noteMaths" type="number" min="0" max="20" class="form-control" v-model="maths">
 								</div>
 								<div class="col-md-1 mt-2">
 									<span v-if="maths == ''"  class="text-danger"><i class="fas fa-ban"></i></span>
@@ -81,7 +81,7 @@
 									<label for="noteAlgorithmie">Algorithmie <small>(coefficient <strong>1</strong>)</small> : </label>
 								</div>
 								<div class="col-md-3">
-									<input id="noteAlgorithmie" name="noteAlgorithmie" type="number" class="form-control" v-model="algorithmie">
+									<input id="noteAlgorithmie" name="noteAlgorithmie" type="number" min="0" max="20" class="form-control" v-model="algorithmie">
 								</div>
 								<div class="col-md-1 mt-2">
 									<span v-if="algorithmie == ''"  class="text-danger"><i class="fas fa-ban"></i></span>

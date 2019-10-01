@@ -12,35 +12,78 @@ var app = new Vue({
 		matieres_option:0,
 		math_appro:"",
 		langue_vivante:"",
+		moyenne:0,
 	},
 	methods:{
 		CalculerMoyenne:function(){
 			var scope = this;
-			var datas = {};
-			datas.culture_generale = scope.culture_generale;
-			datas.maths            = scope.maths;
-			datas.algorithmie      = scope.algorithmie;
-			datas.anglais          = scope.anglais;
-			datas.edm              = scope.edm;
-			datas.e4               = scope.e4;
-			datas.e5               = scope.e5;
-			datas.e6               = scope.e6;
-			datas.math_appro       = scope.math_appro;
-			datas.langue_vivante   = scope.langue_vivante;
 
 			if (scope.culture_generale != "" && scope.maths != "" && scope.algorithmie != "" && scope.anglais 
 				!= "" && scope.edm != "" && scope.e4 != "" && scope.e5 != "" && scope.e6)
 			{
-				$.ajax({
-					url:"data.php?cas=calculMoyenne",
-					type:"POST",
-					data:datas,
-					success:function(data){
-						
-					},
-					error:function(){
-					}
-				});
+				
+			}
+		},
+	},
+	watch:{
+		culture_generale(){
+			if (this.culture_generale != "")
+			{
+				if (this.culture_generale > 20) this.culture_generale = 20;
+			}
+		},
+		maths(){
+			if (this.maths != "")
+			{
+				if (this.maths > 20) this.maths = 20;
+			}
+		},
+		algorithmie(){
+			if (this.algorithmie != "")
+			{
+				if (this.algorithmie > 20) this.algorithmie = 20;
+			}
+		},
+		anglais(){
+			if (this.anglais != "")
+			{
+				if (this.anglais > 20) this.anglais = 20;
+			}
+		},
+		edm(){
+			if (this.edm != "")
+			{
+				if (this.edm > 20) this.edm = 20;
+			}
+		},
+		e4(){
+			if (this.e4 != "")
+			{
+				if (this.e4 > 20) this.e4 = 20;
+			}
+		},
+		e5(){
+			if (this.e5 != "")
+			{
+				if (this.e5 > 20) this.e5 = 20;
+			}
+		},
+		e6(){
+			if (this.e6 != "")
+			{
+				if (this.e6 > 20) this.e6 = 20;
+			}
+		},
+		math_appro(){
+			if (this.math_appro != "")
+			{
+				if (this.math_appro > 20) this.math_appro = 20;
+			}
+		},
+		langue_vivante(){
+			if (this.langue_vivante != "")
+			{
+				if (this.langue_vivante > 20) this.langue_vivante = 20;
 			}
 		},
 	},
