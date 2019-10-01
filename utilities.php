@@ -15,6 +15,9 @@ function Head($string, $menu_active, $menu_deux){
     <link rel="shortcut icon" href="<?php echo RACINE_GLOBAL_RELATIF ?>icon.png" />
     <script src="https://kit.fontawesome.com/34d151f234.js" crossorigin="anonymous"></script>
     <style>
+    	html {
+			  overflow-y: scroll;
+			}
     	body{
     		background-color: #EEEEEE;
     	}
