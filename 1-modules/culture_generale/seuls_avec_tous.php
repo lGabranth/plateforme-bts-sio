@@ -7,13 +7,13 @@
   
   <?php Head("Culture Général - Accueil", 2, 2); ?>
   <?php if ($partie > 1 && $partie < 4) { ?>
-  	<a href="seuls_avec_tous.php?partie=<?php echo ($partie == 2) ? 1 : 2 ?>" style="position: fixed; top: 135px; left: 5px; color: black;">
+  	<a href="seuls_avec_tous.php?partie=<?php echo ($partie == 2) ? 1 : 2 ?>" style="position: fixed; top: 135px; left: 45px;" class="btn btn-sm btn-outline-dark">
   		<i class="fas fa-arrow-left"></i>
   		<?php echo ($partie == 2) ? 'Partie 1' : 'Partie 2' ?>
   	</a>
   <?php } ?>
   <?php if ($partie < 3 && $partie > 0) { ?>
-  	<a href="seuls_avec_tous.php?partie=<?php echo ($partie == 1) ? 2 : 3 ?>" style="position: fixed; top: 135px; right: 5px; color: black;">
+  	<a href="seuls_avec_tous.php?partie=<?php echo ($partie == 1) ? 2 : 3 ?>" style="position: fixed; top: 135px; right: 45px;" class="btn btn-sm btn-outline-dark">
   		<?php echo ($partie == 1) ? 'Partie 2' : 'Partie 3' ?>
   		<i class="fas fa-arrow-right"></i>
   	</a>

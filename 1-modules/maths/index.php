@@ -26,9 +26,5 @@
 				</div>
 			</div>
 		</div>
-
-    <div v-for="d in ds">
-      Je t'aime martin <br>
-    </div>
   </section>
   <?php Js(); ?>
