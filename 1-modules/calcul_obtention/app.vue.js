@@ -86,5 +86,11 @@ var app = new Vue({
 				if (this.langue_vivante > 20) this.langue_vivante = 20;
 			}
 		},
+		matieres_option(){
+			if(this.matieres_option == 0) {
+				this.math_appro = "";
+				this.langue_vivante = "";
+			}
+		},
 	},
 })
