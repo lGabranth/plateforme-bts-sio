@@ -16,12 +16,12 @@
 
   	<div class="row">
   		<div class="col">
-  			<div class="card" style="width: 18rem;">
+  			<div class="card text-center" style="width: 18rem;">
 				  <div class="card-body">
 				    <h5 class="card-title">Diverses formules</h5>
 				    <p><small>Equipe de M. Ben Achour</small></p>
 				    <hr>
-				    <a href="#" class="btn btn-primary">Aller</a>
+				    <a href="#" class="btn"><i class="fas fa-external-link-alt"></i></a>
 				  </div>
 				</div>
 			</div>

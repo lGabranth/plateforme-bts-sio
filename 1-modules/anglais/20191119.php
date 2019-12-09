@@ -25,6 +25,7 @@
           My name is Charles, I'm a 23 years old student currently in IT studies, more specifically in developpement. As I'm following a sandwich courses pattern, I'm half of my study time in a company that teaches me more about developpement. 
           Thus, I've developped some skills in web developpement.
           I can't talk about my abilites as it's not me who should be the judge of it.
+          I love you my Charles - Elodie.
         </p>
 
         <p>

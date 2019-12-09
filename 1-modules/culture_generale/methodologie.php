@@ -21,7 +21,7 @@
     </div>
   	<div class="row">
 
-  		<div class="col bloc mr-1">
+  		<div class="col bloc mr-1 animated fadeInLeftBig">
   			<h2 class="text-center mt-3">Note de synthèse</h2>
   			<hr>
         <section class="container">
@@ -82,7 +82,7 @@
         </section>
   		</div>
 
-  		<div class="col bloc ml-1">
+  		<div class="col bloc ml-1 animated fadeInRightBig">
   			<h2 class="text-center mt-3">Ecriture personnelle</h2>
   			<hr>
         <section class="container">

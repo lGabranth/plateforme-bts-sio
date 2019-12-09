@@ -14,23 +14,9 @@ function Head($string, $menu_active, $menu_deux){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="shortcut icon" href="<?php echo RACINE_GLOBAL_RELATIF ?>icon.png" />
     <script src="https://kit.fontawesome.com/34d151f234.js" crossorigin="anonymous"></script>
-    <style>
-    	html {
-			  overflow-y: scroll;
-			}
-    	body{
-    		background-color: #EEEEEE;
-    	}
-    	.bloc{
-    		background-color: white;
-    		border: 2px solid #757D75;
-    		border-radius: 12px;
-    	}
-    	.dropdown-menu{
-    		border: 1px solid #59ABE3;
-    	}
-    </style>
-	</head>
+    <link rel="stylesheet" type="text/css" href="<?php echo RACINE_GLOBAL_RELATIF ?>css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo RACINE_GLOBAL_RELATIF ?>css/animate.css">
+    </head>
 	<body>
 		<?php Menu($menu_active, $menu_deux); ?>
 <?php }
@@ -48,94 +34,96 @@ function Menu($menu_active, $menu_deux){
 	<!-- <template id="menu"> -->
 		<!-- <main id="menu"> -->
 			
-			<nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
-			  <a class="navbar-brand <?php echo ($menu_active == 1) ? 'active text-info' : ''; ?>" href="<?php echo $root_path; ?>index.php">Accueil</a>
+			<nav class="navbar navbar-expand-lg fixed-top navbar-light justify-content-between" style="background-color: rgba(0, 32, 48, 0.6);">
+			  <a class="navbar-brand <?php echo ($menu_active == 1) ? 'active text-info' : 'text-white'; ?>" href="<?php echo $root_path; ?>index.php">Accueil</a>
 
 		    <ul class="navbar-nav mr-auto">
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 2) ? 'active text-info' : ''; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 2) ? 'active text-info' : 'text-white'; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Culture Générale
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 21) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
+		        <div class="dropdown-menu" style="background-color: rgba(0, 32, 48, 0.9);" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item <?php echo ($menu_deux == 21) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
 		          	Méthodologie
 		          </a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item <?php echo ($menu_deux == 22) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/seuls_avec_tous.php?partie=1">Seuls avec tous</a>
-		          <a class="dropdown-item <?php echo ($menu_deux == 23) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/a_toute_vitesse.php?partie=1">A toute vitesse</a>
+		          <a class="dropdown-item <?php echo ($menu_deux == 22) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/seuls_avec_tous.php?partie=1">Seuls avec tous</a>
+		          <a class="dropdown-item <?php echo ($menu_deux == 23) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/a_toute_vitesse.php?partie=1">A toute vitesse</a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 3) ? 'active text-info' : ''; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 3) ? 'active text-info' : 'text-white'; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Mathématiques
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 31) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/maths/formules.php">
+		        <div class="dropdown-menu" style="background-color: rgba(0, 32, 48, 0.9);" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item <?php echo ($menu_deux == 31) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/maths/formules.php">
 		          	Diverses formules
 		          </a>
 		          <div class="dropdown-divider"></div>
-		          <a class="dropdown-item" href="#">Les suites</a>
-		          <a class="dropdown-item" href="#">...</a>
+		          <a class="dropdown-item" style="color: white" href="#">Les suites</a>
+		          <a class="dropdown-item" style="color: white" href="#">...</a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 4) ? 'active text-info' : ''; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 4) ? 'active text-info' : 'text-white'; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          EDM
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 41) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/edm/economie">
+		        <div class="dropdown-menu" style="background-color: rgba(0, 32, 48, 0.9);" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item <?php echo ($menu_deux == 41) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/edm/economie">
 		          	Economie
 		          </a>
-		          <a class="dropdown-item" href="<?php echo $root_path; ?>1-modules/edm/droit">Droit</a>
-		          <a class="dropdown-item" href="<?php echo $root_path; ?>1-modules/edm/management">Management</a>
+		          <a class="dropdown-item" style="color: white" href="<?php echo $root_path; ?>1-modules/edm/droit">Droit</a>
+		          <a class="dropdown-item" style="color: white" href="<?php echo $root_path; ?>1-modules/edm/management">Management</a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 5) ? 'active text-info' : ''; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 5) ? 'active text-info' : 'text-white'; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Anglais
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 51) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
+		        <div class="dropdown-menu" style="background-color: rgba(0, 32, 48, 0.9);" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item <?php echo ($menu_deux == 51) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
 		          	Méthodologie
 		          </a>
-		          <a class="dropdown-item" href="#">?</a>
-		          <a class="dropdown-item" href="#">?</a>
+		          <a class="dropdown-item" style="color: white" href="#">?</a>
+		          <a class="dropdown-item" style="color: white" href="#">?</a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 6) ? 'active text-info' : ''; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 6) ? 'active text-info' : 'text-white'; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Réseau
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 61) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
+		        <div class="dropdown-menu" style="background-color: rgba(0, 32, 48, 0.9);" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item <?php echo ($menu_deux == 61) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
 		          	?
 		          </a>
-		          <a class="dropdown-item" href="#">?</a>
-		          <a class="dropdown-item" href="#">?</a>
+		          <a class="dropdown-item" style="color: white" href="#">?</a>
+		          <a class="dropdown-item" style="color: white" href="#">?</a>
 		        </div>
 		      </li>
 
 		      <li class="nav-item dropdown">
-		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 7) ? 'active text-info' : ''; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		        <a class="nav-link dropdown-toggle <?php echo ($menu_active == 7) ? 'active text-info' : 'text-white'; ?>" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 		          Développement
 		        </a>
-		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-		          <a class="dropdown-item <?php echo ($menu_deux == 71) ? 'active' : ''; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
+		        <div class="dropdown-menu" style="background-color: rgba(0, 32, 48, 0.9);" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item <?php echo ($menu_deux == 71) ? 'active' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/culture_generale/methodologie.php">
 		          	?
 		          </a>
-		          <a class="dropdown-item" href="#">?</a>
-		          <a class="dropdown-item" href="#">?</a>
+		          <a class="dropdown-item" style="color: white" href="#">?</a>
+		          <a class="dropdown-item" style="color: white" href="#">?</a>
 		        </div>
 		      </li>
 						
 		    </ul>
 
-    		<a class="nav-link <?php echo ($menu_active == 8) ? 'active text-info' : 'text-muted'; ?>" href="<?php echo $root_path; ?>1-modules/calcul_obtention">Simulation</a>
+    		<a class="nav-link <?php echo ($menu_active == 8) ? 'active text-info' : 'text-white'; ?>" href="<?php echo $root_path; ?>1-modules/calcul_obtention">Simulation</a>
 			</nav>
+			<br>
+			<br>
 			<br>
 
 		<!-- </main> -->

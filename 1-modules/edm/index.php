@@ -18,34 +18,34 @@
 
   	<div class="row">
   		<div class="col">
-  			<div class="card" style="width: 18rem;">
+  			<div class="card text-center" style="width: 18rem;">
 				  <div class="card-body">
 				    <h5 class="card-title">Economie</h5>
 				    <p><small>M. Lion</small></p>
 				    <hr>
-				    <a href="economie" class="btn btn-primary">Aller</a>
+				    <a href="economie" class="btn"><i class="fas fa-external-link-alt"></i></a>
 				  </div>
 				</div>
 			</div>
 
 			<div class="col">
-  			<div class="card" style="width: 18rem;">
+  			<div class="card text-center" style="width: 18rem;">
 				  <div class="card-body">
 				    <h5 class="card-title">Droit</h5>
 				    <p><small>M. Lion</small></p>
 				    <hr>
-				    <a href="droit" class="btn btn-primary">Aller</a>
+				    <a href="droit" class="btn"><i class="fas fa-external-link-alt"></i></a>
 				  </div>
 				</div>
 			</div>
 
 			<div class="col">
-  			<div class="card" style="width: 18rem;">
+  			<div class="card text-center" style="width: 18rem;">
 				  <div class="card-body">
 				    <h5 class="card-title">Management</h5>
 				    <p><small>Messieurs Lion & Belqadi</small></p>
 				    <hr>
-				    <a href="management" class="btn btn-primary">Aller</a>
+				    <a href="management" class="btn"><i class="fas fa-external-link-alt"></i></a>
 				  </div>
 				</div>
 			</div>

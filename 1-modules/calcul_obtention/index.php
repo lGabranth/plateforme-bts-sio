@@ -29,7 +29,7 @@
 					- LV2 : 1;
 					- Maths appro : 1;
 				-->
-		  	<div class="row">
+		  	<div class="row simulation animated fadeIn">
 		  		<div class="col-md-6">
 		  			<div class="row mb-2">
 								<div class="col-md-8">
@@ -198,7 +198,7 @@
 
 					<div class="col-md-6">
 						<?php if (!isset($_POST["submit"]) || empty($_POST["submit"])) { ?>
-							<h2 class="alert alert-info text-center">Veuillez saisir vos notes.</h2>
+							<h2 class="alert alert-info text-center animated slideInRight">Veuillez saisir vos notes.</h2>
 						<?php } else { 
 							$noteCultureG = (isset($_POST["noteCultureG"]) && (!empty($_POST["noteCultureG"]) && $_POST["noteCultureG"] != 0)) ? $_POST["noteCultureG"] : "";
 							$noteAnglais = (isset($_POST["noteAnglais"]) && (!empty($_POST["noteAnglais"]) && $_POST["noteAnglais"] != 0)) ? $_POST["noteAnglais"] : "";
