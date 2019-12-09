@@ -154,7 +154,7 @@
 		  			<hr>
 		  			<div class="form-check">
 		  				<input type="checkbox" class="form-check-input" id="cbx-matieres-secondaires" true-value="1" false-value="0" v-model="matieres_option">
-		  				<label for="cbx-matieres-secondaires" class="form-check-value">Je suis inscrit a une/plusieurs matière optionnelles</label>
+		  				<label for="cbx-matieres-secondaires" class="form-check-value">Je suis inscrit a une/plusieurs matière(s) optionnelle(s)</label>
 		  			</div>
 						<br>
 		  			<div v-if="matieres_option == 1">
@@ -224,16 +224,23 @@
 							<div class="alert <?php echo ($noteTotale > 219) ? 'alert-success ' : 'alert-danger ' ?> text-center">
 								<h2 class="mt-2"><?php echo ($noteTotale > 219) ? "Beau travail, tu as le BTS !" : "Pas de chance, tu l'auras la prochaine fois !"; ?></h2>
 								<p>
-									Vous avez <?php echo $nbPoints ?>/20. <br> Ce qui signifie que vous 
+									Vous avez <?php echo $nbPoints ?>/20. <br> 
 									<?php 
-										if($nbPoints < 12) echo "n'avez certainement pas de mention. :/";
-										if($nbPoints >= 12 && $nbPoints < 14) echo "avez certainement la mention assez bien !";
-										if($nbPoints >= 14 && $nbPoints < 16) echo "avez certainement la mention bien !";
-										if($nbPoints >= 16) echo "avez certainement la mention très bien !!!!!!!";
+										if ($nbPoints > 10)
+										{
+											echo "Ce qui signifie que vous ";
+											if($nbPoints < 12) echo "n'avez certainement pas de mention. :/";
+											if($nbPoints >= 12 && $nbPoints < 14) echo "avez certainement la mention assez bien !";
+											if($nbPoints >= 14 && $nbPoints < 16) echo "avez certainement la mention bien !";
+											if($nbPoints >= 16) echo "avez certainement la mention très bien !!!!!!!";
+										}
+										else echo "Il vous manque donc ".(round(10-$nbPoints,2))." points pour valider le BTS.";
 									?>
 								</p>
 							</div>
 						<?php } ?>
+
+						<canvas id="myChart" width="400" height="400"></canvas>
 					</div>
 				</div>
 			</form>

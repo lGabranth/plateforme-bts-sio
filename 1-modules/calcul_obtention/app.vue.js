@@ -14,6 +14,7 @@ var app = new Vue({
 		langue_vivante:"",
 		moyenne:0,
 		autorise:0,
+		chartRadar:{},
 	},
 	methods:{
 		CalculerMoyenne:function(){
@@ -37,6 +38,9 @@ var app = new Vue({
 				else this.autorise = 1;
 			}
 			else this.autorise = 0;
+		},
+		GetChart:function(){
+			
 		},
 	},
 	watch:{
